@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tiktok_project/screens/dev_grid.dart';
 class UpdatePage extends StatelessWidget {
   const UpdatePage({super.key});
 
@@ -109,6 +110,7 @@ class UpdatePage extends StatelessWidget {
                         }, icon: Icon(Icons.close, size: 40,color: Colors.black,)),
 
                         IconButton(onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => DevGrid(),));
 
                         }, icon: Icon(Icons.check_box, size: 40,color: Colors.red,)),
                       ],
